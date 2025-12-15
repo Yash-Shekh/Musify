@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musify</title>
+    <link rel="stylesheet" href="Spotify.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+
+            <div class="home">
+                <ul>
+                    <svg class="cancel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                        color="white" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" >
+                        <path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" />
+                    </svg>
+                    <div class="logo">
+                        <img src="Spotify.svg/logo.svg" alt="logo" style="transform: scaleY(-1);">
+                        <p>Musify</p>
+                    </div>
+                    <li><img src="Spotify.svg/home.svg" alt="home">Home</li>
+                    <li><img src="Spotify.svg/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library">
+                <div class="heading">
+                    <h2>Your Library</h2>
+                    <img src="Spotify.svg/library.svg" alt="">
+                </div>
+
+                <div class="songlist">
+                    <ul>
+                        <!-- <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="white" fill="none" stroke="currentColor" stroke-width="1.5"
+                                >
+                                <circle cx="6.5" cy="18.5" r="3.5" />
+                                <circle cx="18" cy="16" r="3" />
+                                <path
+                                    d="M10 18.5L10 7C10 6.07655 10 5.61483 10.2635 5.32794C10.5269 5.04106 11.0175 4.9992 11.9986 4.91549C16.022 4.57222 18.909 3.26005 20.3553 2.40978C20.6508 2.236 20.7986 2.14912 20.8993 2.20672C21 2.26432 21 2.4315 21 2.76587V16" />
+                                <path d="M10 10C15.8667 10 19.7778 7.66667 21 7" />
+                            </svg>
+
+                            <div class="info">
+                                <div>song name</div>
+                                <div>artist name </div>
+                            </div>
+
+                            <div class="playnow">
+                                <div>Play Now</div>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                color="white" fill="none" stroke="currentColor" stroke-width="1.5"
+                                style="padding: 8px 0;">
+                                <circle cx="12" cy="12" r="10" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+
+                        </li> -->
+                    </ul>
+                </div>
+
+                <!-- <div class="footer">
+                    <div>
+                        <div>
+                            <div class="links">
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                        </span></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                            Policy</span></a>
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About
+                                            Ads</span></a>
+                                </div>
+                                <div>
+                                    <a
+                                        href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                                </div>
+                            </div>
+
+                            <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">
+                                <span style="color: white;">Cookies</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <button class="english">
+                                <span>
+                                    <svg viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.152 16H8a8 8 0 1 1 .152 0m-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296M4.877 7.25c.062-1.771.34-3.386.773-4.624q.148-.427.329-.806a6.51 6.51 0 0 0-4.436 5.43zm-3.334 1.5a6.51 6.51 0 0 0 4.436 5.43 8 8 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129zm5.048 0c-.061 1.771-.339 3.386-.772 4.624q-.123.353-.268.674a6.5 6.5 0 0 0 4.071-5.298zm3.031-1.5a6.51 6.51 0 0 0-4.071-5.298q.145.322.268.674c.433 1.238.711 2.853.772 4.624z">
+                                        </path>
+                                    </svg>
+                                </span>
+                                English
+                            </button>
+                        </div>
+                    </div>
+
+                </div> -->
+            </div>
+        </div>
+        <div class="right">
+            <div class="header">
+                <div class="humbuger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 5L20 5" />
+                        <path d="M4 12L20 12" />
+                        <path d="M4 19L20 19" />
+                    </svg>
+                </div>
+                <div class="nav-btn">
+                    <div class="nav">
+                        <img src="https://ico.hugeicons.com/arrow-left-01-stroke-standard@2x.webp?v=1.0.1"
+                            srcset="https://ico.hugeicons.com/arrow-left-01-stroke-standard.webp?v=1.0.1 1x, https://ico.hugeicons.com/arrow-left-01-stroke-standard@2x.webp?v=1.0.1 2x, https://ico.hugeicons.com/arrow-left-01-stroke-standard@3x.webp?v=1.0.1 3x"
+                            alt="arrow-left-01" width="32" height="32" class="w-full h-full object-contain"
+                            loading="lazy" style="filter: invert(1);">
+
+                        <img src="https://ico.hugeicons.com/arrow-right-01-stroke-standard@2x.webp?v=1.0.1"
+                            srcset="https://ico.hugeicons.com/arrow-right-01-stroke-standard.webp?v=1.0.1 1x, https://ico.hugeicons.com/arrow-right-01-stroke-standard@2x.webp?v=1.0.1 2x, https://ico.hugeicons.com/arrow-right-01-stroke-standard@3x.webp?v=1.0.1 3x"
+                            alt="arrow-right-01" width="32" height="32" class="w-full h-full object-contain"
+                            loading="lazy" style="filter: invert(1);">
+                    </div>
+                    <div class="buttons">
+                        <button class="singupbtn">Sign up</button>
+                        <button class="loginbtn">Log in</button>
+                    </div>
+                </div>
+            </div>
+            <div class="spotify-playlist">
+                <h1>Spotify Playlists</h1>
+                <h3>Show all</h3>
+            </div>
+            <div class="cardContainer">
+                <!-- love -->
+                <div data-folder="love" class="card">
+                    <div class="play">
+                        <div class="oggy">
+                            <svg width="25" height="25" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 20V4L19 12L5 20Z" stroke="#000" fill="#000" stroke-width="1.5"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <img src="Assets/Screenshot 2025-12-12 110239.png" alt=""
+                        style="filter: brightness(1) contrast(1);">
+                    <h2>Baba ji ke Nagme !</h2>
+                    <p>Songs to boost your mood from Oggy and the Cockroaches!</p>
+                </div>
+
+                <!-- hip-hop -->
+                <div data-folder="hip-hop" class="card">
+                    <div class="play">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#000" fill="#000" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <img class="img.hiphop"
+                        src="https://www.shutterstock.com/image-vector/hand-holding-microphone-hip-hop-260nw-2037389717.jpg"
+                        alt="" style="filter: brightness(1) contrast(1);">
+                    <h2>Hip Hop Songs !</h2>
+                    <p>Hits to boost your mood and fill you with happiness!</p>
+                </div>
+
+                <!-- english -->
+                <div data-folder="english" class="card">
+                    <div class="play">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#000" fill="#000" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <img src="Songs\english\cover.jpg" alt="" style="filter: brightness(1) contrast(1);">
+                    <h2>English Hits !</h2>
+                    <p>Hits to boost your mood and fill you with happiness!</p>
+                </div>
+
+                <div class="card">
+                    <div class="play">
+                        <svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 20V4L19 12L5 20Z" stroke="#000" fill="#000" stroke-width="1.5"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <img src="https://i.scdn.co/image/ab67706f0000000249a1ed33d2ca64e6a5d0e550" alt=""
+                        style="filter: brightness(1) contrast(1);">
+                    <h2>Demo Card !</h2>
+                    <p>Please don't click, it's just for checking !</p>
+                </div>
+            </div>
+
+
+            <div class="playbar">
+
+                <div class="song-cr">
+                    <div class="songName">
+                        <div class="songinfo">Song</div>
+                    </div>
+                    <div class="songbtn">
+                        <div id="previous" class="previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="black" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M8.06492 12.6258C8.31931 13.8374 9.67295 14.7077 12.3802 16.4481C15.3247 18.3411 16.797 19.2876 17.9895 18.9229C18.3934 18.7994 18.7654 18.5823 19.0777 18.2876C20 17.4178 20 15.6118 20 12C20 8.38816 20 6.58224 19.0777 5.71235C18.7654 5.41773 18.3934 5.20057 17.9895 5.07707C16.797 4.71243 15.3247 5.6589 12.3802 7.55186C9.67295 9.29233 8.31931 10.1626 8.06492 11.3742C7.97836 11.7865 7.97836 12.2135 8.06492 12.6258Z" />
+                                <path d="M4 4L4 20" />
+                            </svg>
+
+                        </div>
+
+                        <div id="play" class="playbtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#000000" fill="none" stroke="white" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <path
+                                    d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                    fill="currentColor" />
+                            </svg>
+                        </div>
+
+                        <div id="next" class="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                color="#000000" fill="none" stroke="white" stroke-width="1.5" stroke-linejoin="round">
+                                <path
+                                    d="M15.9351 12.6258C15.6807 13.8374 14.327 14.7077 11.6198 16.4481C8.67528 18.3411 7.20303 19.2876 6.01052 18.9229C5.60662 18.7994 5.23463 18.5823 4.92227 18.2876C4 17.4178 4 15.6118 4 12C4 8.38816 4 6.58224 4.92227 5.71235C5.23463 5.41773 5.60662 5.20057 6.01052 5.07707C7.20304 4.71243 8.67528 5.6589 11.6198 7.55186C14.327 9.29233 15.6807 10.1626 15.9351 11.3742C16.0216 11.7865 16.0216 12.2135 15.9351 12.6258Z" />
+                                <path d="M20 5V19" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="time-volume">
+                        <div class="songtime" style="color: white;">00:00 / 00:00</div>
+
+                        <div class="volume">
+                            <svg class="volbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="white" fill="none" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14 14.8135V9.18646C14 6.04126 14 4.46866 13.0747 4.0773C12.1494 3.68593 11.0603 4.79793 8.88232 7.02192C7.75439 8.17365 7.11085 8.42869 5.50604 8.42869C4.10257 8.42869 3.40084 8.42869 2.89675 8.77262C1.85035 9.48655 2.00852 10.882 2.00852 12C2.00852 13.118 1.85035 14.5134 2.89675 15.2274C3.40084 15.5713 4.10257 15.5713 5.50604 15.5713C7.11085 15.5713 7.75439 15.8264 8.88232 16.9781C11.0603 19.2021 12.1494 20.3141 13.0747 19.9227C14 19.5313 14 17.9587 14 14.8135Z" />
+                                <path d="M17 9C17.6254 9.81968 18 10.8634 18 12C18 13.1366 17.6254 14.1803 17 15" />
+                                <path d="M20 7C21.2508 8.36613 22 10.1057 22 12C22 13.8943 21.2508 15.6339 20 17" />
+                            </svg>
+                            <div class="rang">
+                                <input type="range" name="volume" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="Spotify.js"></script>
+</body>
+
+</html>
